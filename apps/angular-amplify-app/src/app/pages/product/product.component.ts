@@ -1,9 +1,10 @@
-import { DatePipe, NgIf } from '@angular/common';
+import { NgIf } from '@angular/common';
 import {
-  ChangeDetectionStrategy, ChangeDetectorRef,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
   Component,
   inject,
-  OnInit
+  OnInit,
 } from '@angular/core';
 import { FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import {
@@ -14,7 +15,7 @@ import {
 @Component({
   selector: 'wk-product',
   standalone: true,
-  imports: [ReactiveFormsModule, DatePipe, NgIf],
+  imports: [ReactiveFormsModule, NgIf],
   templateUrl: './product.component.html',
   styleUrl: './product.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
