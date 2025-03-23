@@ -1,1 +1,12 @@
-<app-nx-welcome></app-nx-welcome> <router-outlet></router-outlet>
+<amplify-authenticator [hideSignUp]="true">
+  <ng-template
+    amplifySlot="authenticated"
+    let-user="user"
+    let-signOut="signOut"
+  >
+    <wk-nav [user]="user" (signOut)="signOut()"></wk-nav>
+    <main class="main">
+      <router-outlet></router-outlet>
+    </main>
+  </ng-template>
+</amplify-authenticator>

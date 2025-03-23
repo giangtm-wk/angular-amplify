@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-body">
+    <p>product works!</p>
+
+    <ng-container *ngIf="isLoading; else todoList">
+      <div class="d-flex justify-content-center h-full">
+        <div class="spinner-border text-secondary" style="width: 3rem; height: 3rem;" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-template #todoList>
+      <table class="todo-table table-bordered table-hover mt-5">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Content</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+          @for (todo of todos; track todo.id) {
+            <tr>
+              <td>{{ todo.id }}</td>
+              <td>{{ todo.title }}</td>
+              <td>
+                <button class="btn btn-secondary" (click)="updateTodo(todo.id)">Update</button>
+              </td>
+            </tr>
+          }
+      </table>
+    </ng-template>
+  </div>
+</div>

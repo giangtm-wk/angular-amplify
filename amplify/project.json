@@ -1,0 +1,12 @@
+{
+  "name": "amplify",
+  "root": "amplify",
+  "targets": {
+    "deploy": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "amplify push"
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<header class="header">
+  <div class="logo">WK</div>
+  <nav class="d-flex align-items-center">
+    <div class="me-3">Welcome {{ user.signInDetails.loginId }}</div>
+    <button class="btn btn-secondary" (click)="signOut.emit()">Sign Out</button>
+  </nav>
+</header>

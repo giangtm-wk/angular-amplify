@@ -1,0 +1,12 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.todo-table {
+  width: 100%;
+
+  th, td {
+    padding: 16px;
+  }
+}

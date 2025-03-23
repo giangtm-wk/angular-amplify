@@ -2,7 +2,7 @@
   "name": "angular-amplify-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "wk",
   "sourceRoot": "apps/angular-amplify-app/src",
   "tags": [],
   "targets": {
@@ -22,7 +22,11 @@
             "input": "apps/angular-amplify-app/public"
           }
         ],
-        "styles": ["apps/angular-amplify-app/src/styles.scss"],
+        "styles": [
+          "node_modules/@aws-amplify/ui-angular/theme.css",
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "apps/angular-amplify-app/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
