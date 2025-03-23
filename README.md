@@ -31,7 +31,7 @@ npm create amplify@latest
 "node_modules/@aws-amplify/ui-angular/theme.css"
 ```
 
-### Use cloud sandbox in dev environment after update amplify source code
+### Use cloud sandbox in dev environment after update amplify source code https://docs.amplify.aws/angular/start/account-setup/
 ```shell
 npx ampx sandbox --once
 ```
