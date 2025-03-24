@@ -9,11 +9,11 @@ frontend:
   phases:
     preBuild:
       commands:
+        - nvm use 20.18.1
+        - node -v
         - npx ng version
     build:
       commands:
-        - nvm use 20.18.1
-        - node -v
         - npx nx build angular-amplify-app --configuration=production
   artifacts:
     baseDirectory: dist/apps/angular-amplify-app/browser
