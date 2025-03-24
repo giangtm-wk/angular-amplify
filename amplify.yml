@@ -8,7 +8,7 @@ applications:
             - npm ci
         build:
           commands:
-            - npx nx build angular-amplify-app --configuration=production
+            - npx nx build angular-amplify-app
       artifacts:
         baseDirectory: dist/apps/angular-amplify-app
         files:
